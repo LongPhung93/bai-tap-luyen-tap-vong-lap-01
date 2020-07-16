@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    // Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành.
+    for (i = 1; i <= 100; i++) {
+        if (i == 99) {
+            alert('Đã hoàn thành');
+        }
+        document.write(i + '<br>');
+    }
+    // Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. Nếu nhiệt độ nhập vào
+    // trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.
+    let t = parseInt(prompt('Nhập vào nhiệt độ hiện tại:'));
+    if (t > 100) {
+        alert('Hãy giảm nhiệt độ');
+    } else if (t < 20) {
+        alert('Hãy tăng nhiệt độ');
+    } else {
+        alert('Nhiệt độ bình thường');
+    }
+</script>
+</body>
+</html>
